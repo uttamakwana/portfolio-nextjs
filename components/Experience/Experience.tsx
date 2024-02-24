@@ -9,12 +9,22 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
+import { motion } from "framer-motion";
 
 export default function Experience() {
-  const { ref } = useSectionInView({ section: "Experience", threshold: 0.3 });
+  const { ref } = useSectionInView({ section: "Experience", threshold: 0.5 });
 
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+    <motion.section
+      id="experience"
+      ref={ref}
+      className="scroll-mt-28 mb-28 sm:mb-40"
+      initial={{ opacity: 0 }}
+      whileInView={{
+        opacity: 1,
+      }}
+      transition={{ duration: 1 }}
+    >
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
@@ -27,7 +37,7 @@ export default function Experience() {
                 padding: "1.3rem 2rem",
                 display: "block",
                 background: "#f3f4f6",
-                cursor: "default"
+                cursor: "default",
               }}
               contentArrowStyle={{
                 borderRight: "0.4rem solid #9ca3af",
@@ -49,6 +59,6 @@ export default function Experience() {
           </React.Fragment>
         ))}
       </VerticalTimeline>
-    </section>
+    </motion.section>
   );
 }

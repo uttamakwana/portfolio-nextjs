@@ -5,5 +5,15 @@ import About from "./About/About.tsx";
 import Projects from "./Projects/Projects.tsx";
 import Skills from "./Skills/Skills.tsx";
 import Experience from "./Experience/Experience.tsx";
+import Contact from "./Contact/Contact.tsx";
 
-export { Header, Intro, SectionDivider, About, Projects, Skills, Experience };
+export {
+  Header,
+  Intro,
+  SectionDivider,
+  About,
+  Projects,
+  Skills,
+  Experience,
+  Contact,
+};
