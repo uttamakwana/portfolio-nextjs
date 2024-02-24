@@ -1,5 +1,7 @@
 "use client";
+import { useActiveSectionContext } from "@/context/ActiveSectionContext";
 import { uttamImg } from "@/lib/data";
+import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,8 +10,13 @@ import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 
 export default function Intro() {
+  const { ref } = useSectionInView({ section: "Home", threshold: 1 });
   return (
-    <section className="text-center mb-10 sm:mb-0 scroll-mt-[100rem]" id='home'>
+    <section
+      ref={ref}
+      className="text-center mb-10 sm:mb-0 scroll-mt-[100rem] relative"
+      id="home"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
