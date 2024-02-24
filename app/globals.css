@@ -11,5 +11,24 @@
 }
 
 html {
- scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  --line-color: #e5e7eb;
+}
+
+.my-v-element span {
+  visibility: visible !important;
+}
+
+.my-v-element div {
+  visibility: visible !important;
+}
+
+.my-v-element p {
+  visibility: visible !important;
+}
+
+@media (width >= 1170px) {
+  .vertical-timeline-element-date {
+    padding-inline: 1rem !important;
+  }
 }
