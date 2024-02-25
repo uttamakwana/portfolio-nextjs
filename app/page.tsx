@@ -13,7 +13,6 @@ export default function Home() {
       <SectionDivider />
       <Experience />
       <Contact />
-      <SectionDivider />
     </main>
   );
 }

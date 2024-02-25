@@ -15,6 +15,10 @@ html {
   --line-color: #e5e7eb;
 }
 
+html.dark {
+  --line-color: #1f2937;
+}
+
 .my-v-element span {
   visibility: visible !important;
 }
@@ -32,3 +36,4 @@ html {
     padding-inline: 1rem !important;
   }
 }
+

@@ -65,7 +65,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full cursor-pointer font-medium outline-none focus:scale-110 hover:scale-105 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-gray-900 text-white dark:bg-white dark:text-black px-7 py-3 flex items-center gap-2 rounded-full cursor-pointer font-medium outline-none focus:scale-110 hover:scale-105 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -75,7 +75,7 @@ export default function Intro() {
           <BsArrowRight className="group-hover:translate-x-1 transition" />
         </Link>
         <a
-          className="group bg-white text-gray-900 px-7 py-3 font-medium flex items-center gap-2 rounded-full cursor-pointer border border-black/10 outline-none focus:translate-y-1 hover:translate-y-1 active:translate-y-1 transition"
+          className="group bg-white text-gray-900 dark:bg-gray-900 dark:text-white px-7 py-3 font-medium flex items-center gap-2 rounded-full cursor-pointer border border-black/10 dark:border-white/10 outline-none focus:translate-y-1 hover:translate-y-1 active:translate-y-1 transition"
           href="/UTTAM_MAKWANA_CV.pdf"
           download
         >
@@ -83,14 +83,14 @@ export default function Intro() {
           <HiDownload className="group-hover:text-gray-500 transition" />
         </a>
         <a
-          className="bg-white text-gray-800 px-4 py-3 text-xl flex items-center gap-2 rounded-full cursor-pointer border border-black/10 outline-none focus:-translate-y-1 hover:-translate-y-1 active:-translate-y-1 transition"
+          className="bg-white dark:bg-gray-800 text-gray-800 dark:text-white px-4 py-3 text-xl flex items-center gap-2 rounded-full cursor-pointer border border-black/10 dark:border-white/10 outline-none focus:-translate-y-1 hover:translate-y-1 active:-translate-y-1 transition"
           href="https://linkedin.com/in/uttamakwana"
           target="_blank"
         >
           <BsLinkedin />
         </a>
         <a
-          className="bg-white text-gray-800 px-4 py-3 text-xl flex items-center gap-2 rounded-full cursor-pointer border border-black/10 outline-none focus:translate-y-1 hover:translate-y-1 active:translate-y-1 transition"
+          className="bg-white dark:bg-gray-800 text-gray-800 dark:text-white px-4 py-3 text-xl flex items-center gap-2 rounded-full cursor-pointer border border-black/10 dark:border-white/10 outline-none focus:translate-y-1 hover:translate-y-1 active:translate-y-1 transition"
           href="https://github.com/uttamakwana"
           target="_blank"
         >

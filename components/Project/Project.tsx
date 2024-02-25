@@ -30,10 +30,10 @@ export default function Project({
       style={{ scale: scaleProgress, opacity: opacityProgress }}
       className="group mb-3 lg:mb-8 last:mb-0 cursor-default"
     >
-      <section className="project-card | bg-gray-100 border border-black/5 overflow-hidden lg:pr-8 lg:h-[20rem] relative hover:bg-gray-200 rounded-lg">
+      <section className="project-card | bg-gray-100 dark:bg-gray-900 border border-black/5 dark:border-white/5 overflow-hidden lg:pr-8 lg:h-[20rem] relative hover:bg-gray-200 dark:hover:bg-gray-800 rounded-lg">
         <div className="p-4 lg:pl-10 lg:pr-2 lg:pt-10 lg:max-w-[50%] flex flex-col h-full group-even:ml-auto">
           <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
+          <p className="mt-2 leading-relaxed text-gray-700 dark:text-gray-200">{description}</p>
           <ul className="flex flex-wrap gap-2 mt-4 lg:mt-auto">
             {tags.map((tag, index) => (
               <li
@@ -52,7 +52,7 @@ export default function Project({
               <FaExternalLinkAlt className="translate-y-[-1px]" />
             </a>
             <a
-              className="bg-white-900 flex gap-1 items-center px-3 py-1 text-[0.75rem] uppercase tracking-wider text-black border border-black/[0.7] rounded-full font-medium cursor-pointer"
+              className="bg-white-900 flex gap-1 items-center px-3 py-1 text-[0.75rem] uppercase tracking-wider text-black dark:text-white border border-black/[0.7] dark:border-white/10 rounded-full font-medium cursor-pointer"
               href={code}
               target="_blank"
             >

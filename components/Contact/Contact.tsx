@@ -13,7 +13,7 @@ export default function Contact() {
     <motion.section
       id="contact"
       ref={ref}
-      className="scroll-mt-28 w-full"
+      className="scroll-mt-28 w-full mb-10 lg:mb-36"
       initial={{ opacity: 0 }}
       whileInView={{
         opacity: 1,
@@ -48,10 +48,10 @@ export default function Contact() {
           required
           maxLength={500}
           placeholder="Enter your email address"
-          className="w-100 rounded-md bg-white border outline-none border-black/[0.1] focus:border-black/[0.3]  py-4 px-6"
+          className="w-100 rounded-md bg-white dark:bg-gray-800 border outline-none border-black/[0.1] dark:border-white/[0.1] focus:border-black/[0.3]  py-4 px-6"
         />
         <textarea
-          className="w-100 rounded-md bg-white border outline-none border-black/[0.1] focus:border-black/[0.3] py-4 px-6"
+          className="w-100 rounded-md bg-white dark:bg-gray-800 border outline-none border-black/[0.1] dark:border-white/[0.1] focus:border-black/[0.3] py-4 px-6"
           placeholder="Your Message"
           cols={30}
           name="message"
