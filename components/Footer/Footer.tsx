@@ -8,7 +8,7 @@ export default function Footer() {
     <motion.footer
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      className="p-10 lg:p-4 text-center bg-gray-100 bg-opacity-80 dark:bg-gray-900 text-gray-500 dark:text-gray-200"
+      className="p-10 lg:p-4 text-center bg-gray-100 bg-opacity-70 dark:bg-gray-950 text-gray-500 dark:text-gray-200"
     >
       <small className="mb-2 block text-xs">
         &copy; 2023-2024 Uttam Makwana. All rights reserved.
